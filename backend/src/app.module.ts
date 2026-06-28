@@ -3,9 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { VehiclesModule } from './vehicles/vehicles.module';
-import { ExpensesModule } from './expenses/expenses.module';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { AiModule } from './ai/ai.module';
 
 @Module({
   imports: [
@@ -20,11 +18,9 @@ import { DashboardModule } from './dashboard/dashboard.module';
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
-    VehiclesModule,
-    ExpensesModule,
-    DashboardModule,
+    AiModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
