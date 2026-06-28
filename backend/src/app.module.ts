@@ -3,7 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { VehiclesModule } from './vehicles/vehicles.module';
+// import { VehiclesModule } from './vehicles/vehicles.module';
 import { RefuelingsModule } from './refuelings/refuelings.module';
 
 @Module({
@@ -19,7 +19,7 @@ import { RefuelingsModule } from './refuelings/refuelings.module';
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
-    VehiclesModule,
+    // VehiclesModule,
     RefuelingsModule,
   ],
   controllers: [AppController],
