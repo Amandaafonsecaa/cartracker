@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=DM+Serif+Display&display=swap');
+
+:root {
+  /* ─── Backgrounds ─── */
+  --color-bg: #F7F4D5;          /* fundo principal */
+  --color-surface: #EDE9BD;     /* cards, inputs, nav */
+  --color-surface-hover: #E4E0B0; /* hover de superfícies */
+
+  /* ─── Bordas ─── */
+  --color-border: #D0CC9F;
+
+  /* ─── Verde (escala completa) ─── */
+  --color-green-900: #1E3019;   /* texto em fundos verdes escuros */
+  --color-green-700: #2D5024;   /* texto em cards de insight */
+  --color-green-500: #4A6741;   /* primário: botões, nav ativo, big card */
+  --color-green-400: #6B8B5E;   /* barras do gráfico (mês anterior) */
+  --color-green-300: #94B285;   /* ícones inativos, subtexto em verde */
+  --color-green-100: #C8DABA;   /* card total estimado, tags combustível */
+  --color-green-50:  #E4EFDE;   /* card de insight da IA */
+
+  /* ─── Texto ─── */
+  --color-text-primary:   #2B3A24; /* títulos, valores principais */
+  --color-text-secondary: #4A5E42; /* texto de corpo */
+  --color-text-muted:     #7A9270; /* labels, placeholders, datas */
+
+  /* ─── Semântico ─── */
+  --color-danger: #A84B42; /* valores de gasto (negativos) */
+
+  /* ─── Categorias de gasto ─── */
+  --color-cat-fuel-bg:          #C8DABA;
+  --color-cat-fuel-text:        #1E3019;
+  --color-cat-maintenance-bg:   #FAEEDA;
+  --color-cat-maintenance-text: #633806;
+  --color-cat-ipva-bg:          #E6F1FB;
+  --color-cat-ipva-text:        #0C447C;
+  --color-cat-insurance-bg:     #E4EFDE;
+  --color-cat-insurance-text:   #2D5024;
+  --color-cat-fine-bg:          #FCEBEB;
+  --color-cat-fine-text:        #791F1F;
+
+  /* ─── Tipografia ─── */
+  --font-sans:  'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, serif; /* só no número grande do dashboard */
+
+  /* ─── Border radius ─── */
+  --radius-sm:   8px;
+  --radius-md:   10px;
+  --radius-lg:   12px;
+  --radius-xl:   14px;
+  --radius-pill: 20px;
+}
