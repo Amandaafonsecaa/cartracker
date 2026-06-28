@@ -3,8 +3,8 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-// import { VehiclesModule } from './vehicles/vehicles.module';
-import { RefuelingsModule } from './refuelings/refuelings.module';
+import { VehiclesModule } from './vehicles/vehicles.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @Module({
   imports: [
@@ -19,10 +19,10 @@ import { RefuelingsModule } from './refuelings/refuelings.module';
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
-    // VehiclesModule,
-    RefuelingsModule,
+    VehiclesModule,
+    DashboardModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}
