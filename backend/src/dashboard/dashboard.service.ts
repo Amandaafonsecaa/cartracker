@@ -2,8 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Refueling } from '../refuelings/entities/refueling.entity';
-import { Expense } from '../expenses/entities/expense.entity';
-
+import { Expense } from '../expenses/entitites/expense.entity';
 @Injectable()
 export class DashboardService {
     constructor(

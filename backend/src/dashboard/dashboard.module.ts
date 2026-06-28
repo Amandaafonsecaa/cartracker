@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Refueling } from '../refuelings/entities/refueling.entity';
-import { Expense } from '../expenses/entities/expense.entity';
+import { Expense } from '../expenses/entitites/expense.entity';
 import { DashboardController } from './dashboard.controller';
 import { DashboardService } from './dashboard.service';
 
