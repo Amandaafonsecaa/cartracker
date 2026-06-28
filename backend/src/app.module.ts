@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { VehiclesModule } from './vehicles/vehicles.module';
+import { ExpensesModule } from './expenses/expenses.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 
 @Module({
@@ -20,6 +21,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
       synchronize: true,
     }),
     VehiclesModule,
+    ExpensesModule,
     DashboardModule,
   ],
   controllers: [AppController],
