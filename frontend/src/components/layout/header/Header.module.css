@@ -1,0 +1,65 @@
+.navbar {
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+    height: 48px;
+
+border-bottom: 1px solid var(--color-border);
+}
+
+.logo{
+    width: 5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+
+}
+
+.navLogo {
+    flex:1;
+  color: var(--color-text-primary);
+}
+
+.navItems{
+    flex: 1;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.navLink {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 5px 10px;  /* ← padding sempre presente */
+}
+
+.navLinkActive {
+  background: var(--color-green-500);
+  color: var(--color-bg);
+  border-radius: 7px;
+  padding: 5px 10px;  /* ← mesmo padding */
+}
+
+.navLink:hover {
+  background: var(--color-green-300);
+  color: var(--color-text-primary);
+  /* sem padding aqui — já vem do .navLink */
+}
+
+
+.navName {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navName p {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  border-radius: 7px;
+  padding: 4px 14px;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+}
