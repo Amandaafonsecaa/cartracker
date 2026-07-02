@@ -1,11 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Header } from './components/layout/header/Header';
+import { Layout } from './components/layout/Layout';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />        {/* ← fora do Routes, aparece em todas as páginas */}
-      <main>
+      <Layout>
         <Routes>
           <Route path="/" element={<div>Dashboard</div>} />
           <Route path="/refueling" element={<div>Abastecimento</div>} />
@@ -13,9 +12,9 @@ function App() {
           <Route path="/history" element={<div>Histórico</div>} />
           <Route path="/vehicles" element={<div>Veículos</div>} />
         </Routes>
-      </main>
+      </Layout>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;
